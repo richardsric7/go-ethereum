@@ -24,10 +24,10 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/core/rawdb"
+	"github.com/richardsric7/go-ethereum/crypto"
+	"github.com/richardsric7/go-ethereum/ethdb/memorydb"
 	"golang.org/x/exp/slices"
 )
 

@@ -25,27 +25,27 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/state/snapshot"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/triedb/hashdb"
-	"github.com/ethereum/go-ethereum/trie/triedb/pathdb"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/common/hexutil"
+	"github.com/richardsric7/go-ethereum/common/math"
+	"github.com/richardsric7/go-ethereum/core"
+	"github.com/richardsric7/go-ethereum/core/rawdb"
+	"github.com/richardsric7/go-ethereum/core/state"
+	"github.com/richardsric7/go-ethereum/core/state/snapshot"
+	"github.com/richardsric7/go-ethereum/core/types"
+	"github.com/richardsric7/go-ethereum/core/vm"
+	"github.com/richardsric7/go-ethereum/crypto"
+	"github.com/richardsric7/go-ethereum/ethdb"
+	"github.com/richardsric7/go-ethereum/params"
+	"github.com/richardsric7/go-ethereum/rlp"
+	"github.com/richardsric7/go-ethereum/trie"
+	"github.com/richardsric7/go-ethereum/trie/triedb/hashdb"
+	"github.com/richardsric7/go-ethereum/trie/triedb/pathdb"
 	"golang.org/x/crypto/sha3"
 )
 
 // StateTest checks transaction processing without block context.
-// See https://github.com/ethereum/EIPs/issues/176 for the test format specification.
+// See https://github.com/richardsric7/EIPs/issues/176 for the test format specification.
 type StateTest struct {
 	json stJSON
 }
@@ -394,7 +394,7 @@ func (tx *stTransaction) toMessage(ps stPostState, baseFee *big.Int) (*core.Mess
 	dataHex := tx.Data[ps.Indexes.Data]
 	valueHex := tx.Value[ps.Indexes.Value]
 	gasLimit := tx.GasLimit[ps.Indexes.Gas]
-	// Value, Data hex encoding is messy: https://github.com/ethereum/tests/issues/203
+	// Value, Data hex encoding is messy: https://github.com/richardsric7/tests/issues/203
 	value := new(big.Int)
 	if valueHex != "0x" {
 		v, ok := math.ParseBig256(valueHex)

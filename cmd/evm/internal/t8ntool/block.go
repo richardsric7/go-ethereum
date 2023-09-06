@@ -24,14 +24,14 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/common/hexutil"
+	"github.com/richardsric7/go-ethereum/common/math"
+	"github.com/richardsric7/go-ethereum/consensus/clique"
+	"github.com/richardsric7/go-ethereum/core/types"
+	"github.com/richardsric7/go-ethereum/crypto"
+	"github.com/richardsric7/go-ethereum/log"
+	"github.com/richardsric7/go-ethereum/rlp"
 	"github.com/urfave/cli/v2"
 )
 

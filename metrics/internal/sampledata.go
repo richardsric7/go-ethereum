@@ -19,7 +19,7 @@ package internal
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/richardsric7/go-ethereum/metrics"
 )
 
 // ExampleMetrics returns an ordered registry populated with a sample of metrics.

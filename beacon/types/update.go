@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/beacon/merkle"
+	"github.com/richardsric7/go-ethereum/beacon/params"
+	"github.com/richardsric7/go-ethereum/common"
 )
 
 // LightClientUpdate is a proof of the next sync committee root based on a header
@@ -32,7 +32,7 @@ import (
 // sync committee root.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
+// https://github.com/richardsric7/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
 type LightClientUpdate struct {
 	AttestedHeader          SignedHeader  // Arbitrary header out of the period signed by the sync committee
 	NextSyncCommitteeRoot   common.Hash   // Sync committee of the next period advertised in the current one

@@ -22,10 +22,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/richardsric7/go-ethereum/core/rawdb"
+	"github.com/richardsric7/go-ethereum/core/types"
+	"github.com/richardsric7/go-ethereum/trie"
+	"github.com/richardsric7/go-ethereum/trie/trienode"
 )
 
 // randTest performs random trie operations.

@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/richardsric7/go-ethereum/log"
+	"github.com/richardsric7/go-ethereum/metrics"
 )
 
 const (

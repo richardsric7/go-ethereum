@@ -24,9 +24,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/richardsric7/go-ethereum/beacon/merkle"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/common/hexutil"
 	"gopkg.in/yaml.v3"
 )
 
@@ -43,7 +43,7 @@ type Fork struct {
 	// Epoch when given fork version is activated
 	Epoch uint64
 
-	// Fork version, see https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#custom-types
+	// Fork version, see https://github.com/richardsric7/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#custom-types
 	Version []byte
 
 	// calculated by computeDomain, based on fork version and genesis validators root

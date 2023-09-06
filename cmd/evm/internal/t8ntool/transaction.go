@@ -24,14 +24,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/common/hexutil"
+	"github.com/richardsric7/go-ethereum/core"
+	"github.com/richardsric7/go-ethereum/core/types"
+	"github.com/richardsric7/go-ethereum/log"
+	"github.com/richardsric7/go-ethereum/params"
+	"github.com/richardsric7/go-ethereum/rlp"
+	"github.com/richardsric7/go-ethereum/tests"
 	"github.com/urfave/cli/v2"
 )
 

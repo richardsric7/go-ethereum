@@ -21,9 +21,9 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/beacon/merkle"
+	"github.com/richardsric7/go-ethereum/beacon/params"
+	"github.com/richardsric7/go-ethereum/common"
 )
 
 //go:generate go run github.com/fjl/gencodec -type Header -field-override headerMarshaling -out gen_header_json.go
@@ -39,7 +39,7 @@ const (
 // Header defines a beacon header.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#beaconblockheader
+// https://github.com/richardsric7/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#beaconblockheader
 type Header struct {
 	// Monotonically increasing slot number for the beacon block (may be gapped)
 	Slot uint64 `gencodec:"required" json:"slot"`
@@ -50,10 +50,10 @@ type Header struct {
 	// SSZ hash of the parent beacon header
 	ParentRoot common.Hash `gencodec:"required" json:"parent_root"`
 
-	// SSZ hash of the beacon state (https://github.com/ethereum/consensus-specs/blob/dev/specs/bellatrix/beacon-chain.md#beacon-state)
+	// SSZ hash of the beacon state (https://github.com/richardsric7/consensus-specs/blob/dev/specs/bellatrix/beacon-chain.md#beacon-state)
 	StateRoot common.Hash `gencodec:"required" json:"state_root"`
 
-	// SSZ hash of the beacon block body (https://github.com/ethereum/consensus-specs/blob/dev/specs/bellatrix/beacon-chain.md#beaconblockbody)
+	// SSZ hash of the beacon block body (https://github.com/richardsric7/consensus-specs/blob/dev/specs/bellatrix/beacon-chain.md#beaconblockbody)
 	BodyRoot common.Hash `gencodec:"required" json:"body_root"`
 }
 
@@ -106,7 +106,7 @@ func SyncPeriod(slot uint64) uint64 {
 // SignedHeader represents a beacon header signed by a sync committee.
 //
 // This structure is created from either an optimistic update or an instant update:
-//   - https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
+//   - https://github.com/richardsric7/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
 //   - https://github.com/zsfelfoldi/beacon-APIs/blob/instant_update/apis/beacon/light_client/instant_update.yaml
 type SignedHeader struct {
 	// Beacon header being signed

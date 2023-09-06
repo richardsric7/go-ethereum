@@ -19,9 +19,9 @@ package rawdb
 import (
 	"encoding/binary"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/richardsric7/go-ethereum/common"
+	"github.com/richardsric7/go-ethereum/ethdb"
+	"github.com/richardsric7/go-ethereum/log"
 )
 
 // ReadPreimage retrieves a single preimage of the provided hash.
