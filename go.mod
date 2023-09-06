@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/richardsric7/go-ethereum
 
 go 1.20
 
